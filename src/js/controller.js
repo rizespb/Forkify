@@ -151,11 +151,6 @@ const controlAddRecipe = async function (newRecipe) {
   }
 };
 
-// Функция для лекции про git
-const newFeature = function () {
-  console.log('Welcome to the application!');
-};
-
 // Реаллизаци Publisher - Sunsriber паттерна
 // Обработкич событий находится в recipeView (другой в searchView). Обработчик addHandlerRender (или addHandlerSearch) является Издателем, который не знает о существовании в controller функции controlRecipes
 // Ниже мы передаем ему неизвестную ему функция controlRecipes (или controllerSearchResults) в качестве аргумента
@@ -181,9 +176,6 @@ const init = function () {
 
   // Отлавливание клика по кнопке загрузки добавленного рецепта
   addRecipeView.addHandlerUpload(controlAddRecipe);
-
-  // Функция для лекции про git
-  newFeature();
 };
 
 init();
